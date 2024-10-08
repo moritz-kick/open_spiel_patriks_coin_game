@@ -144,6 +144,8 @@ set(GAME_SOURCES
   pathfinding/pathfinding.h
   pentago/pentago.cc
   pentago/pentago.h
+  patriks_coin_game/patriks_coin_game.cc
+  patriks_coin_game/patriks_coin_game.h
   phantom_go/phantom_go.h
   phantom_go/phantom_go.cc
   phantom_go/phantom_go_board.h
@@ -551,6 +553,10 @@ add_test(oware_test oware_test)
 add_executable(pathfinding_test pathfinding/pathfinding_test.cc ${OPEN_SPIEL_OBJECTS}
                $<TARGET_OBJECTS:tests>)
 add_test(pathfinding_test pathfinding_test)
+
+add_executable(patriks_coin_game_test patriks_coin_game/patriks_coin_game_test.cc ${OPEN_SPIEL_OBJECTS}
+               $<TARGET_OBJECTS:tests>)
+add_test(patriks_coin_game_test patriks_coin_game_test)
 
 add_executable(pentago_test pentago/pentago_test.cc ${OPEN_SPIEL_OBJECTS}
                $<TARGET_OBJECTS:tests>)

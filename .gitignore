@@ -23,6 +23,7 @@ build*/
 cmake-build-*/
 dist/
 pyspiel.egg-info/
+open_spiel.egg-info/
 
 # Swift build directory
 .build
@@ -60,3 +61,7 @@ Package.resolved
 # Visual Studio generated files
 open_spiel/.vs
 /.env
+
+# new venv
+open_spiel_venv/
+cmd_to_clone_and_run_code.txt
