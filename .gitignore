@@ -63,5 +63,5 @@ open_spiel/.vs
 /.env
 
 # new venv
-open_spiel_venv/
+open_spiel_env/
 cmd_to_clone_and_run_code.txt

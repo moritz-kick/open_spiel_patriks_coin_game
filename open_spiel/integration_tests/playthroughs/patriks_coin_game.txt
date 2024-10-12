@@ -1,0 +1,67 @@
+game: patriks_coin_game
+
+GameType.chance_mode = ChanceMode.DETERMINISTIC
+GameType.dynamics = Dynamics.SIMULTANEOUS
+GameType.information = Information.IMPERFECT_INFORMATION
+GameType.long_name = "Patrik's Coin Game"
+GameType.max_num_players = 2
+GameType.min_num_players = 2
+GameType.parameter_specification = []
+GameType.provides_information_state_string = True
+GameType.provides_information_state_tensor = False
+GameType.provides_observation_string = False
+GameType.provides_observation_tensor = False
+GameType.provides_factored_observation_string = False
+GameType.reward_model = RewardModel.TERMINAL
+GameType.short_name = "patriks_coin_game"
+GameType.utility = Utility.ZERO_SUM
+
+NumDistinctActions() = 6
+PolicyTensorShape() = [6]
+MaxChanceOutcomes() = 0
+GetParameters() = {}
+NumPlayers() = 2
+MinUtility() = -1.0
+MaxUtility() = 1.0
+UtilitySum() = 0.0
+MaxGameLength() = 6
+ToString() = "patriks_coin_game()"
+
+# State 0
+# Game State:
+# Current Round: 1
+# Coin Player Choices:
+# Estimator Guesses:
+IsTerminal() = False
+History() = []
+HistoryString() = ""
+IsChanceNode() = False
+IsSimultaneousNode() = True
+CurrentPlayer() = -2
+InformationStateString(0) = "Round: 1\nCoin Player Choices: \nEstimator Guesses: "
+InformationStateString(1) = "Round: 1\nEstimator Guesses: \nCoin Player Choices: "
+Rewards() = [0, 0]
+Returns() = [0, 0]
+LegalActions(0) = [0, 1, 2, 3, 4, 5]
+LegalActions(1) = [0, 1, 2, 3, 4, 5]
+StringLegalActions(0) = ["Player 0 chose: 0", "Player 0 chose: 1", "Player 0 chose: 2", "Player 0 chose: 3", "Player 0 chose: 4", "Player 0 chose: 5"]
+StringLegalActions(1) = ["Player 1 chose: 0", "Player 1 chose: 1", "Player 1 chose: 2", "Player 1 chose: 3", "Player 1 chose: 4", "Player 1 chose: 5"]
+
+# Apply joint action ["Player 0 chose: 5", "Player 1 chose: 5"]
+actions: [5, 5]
+
+# State 1
+# Game State:
+# Current Round: 2
+# Coin Player Choices: 5
+# Estimator Guesses: 5
+IsTerminal() = True
+History() = [5, 5]
+HistoryString() = "5, 5"
+IsChanceNode() = False
+IsSimultaneousNode() = False
+CurrentPlayer() = -4
+InformationStateString(0) = "Round: 2\nCoin Player Choices: 5 \nEstimator Guesses: 5 "
+InformationStateString(1) = "Round: 2\nEstimator Guesses: 5 \nCoin Player Choices: 5 "
+Rewards() = [-1, 1]
+Returns() = [-1, 1]

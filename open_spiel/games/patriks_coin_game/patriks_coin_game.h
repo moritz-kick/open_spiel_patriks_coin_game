@@ -15,21 +15,25 @@ class PatriksCoinGameState : public State {
  public:
   explicit PatriksCoinGameState(std::shared_ptr<const Game> game);
 
+  // Override methods from the State base class.
   Player CurrentPlayer() const override;
   std::string ActionToString(Player player, Action action_id) const override;
   std::string ToString() const override;
   bool IsTerminal() const override;
   std::vector<double> Returns() const override;
+  std::vector<double> Rewards() const override;
   std::string InformationStateString(Player player) const override;
   std::unique_ptr<State> Clone() const override;
+
   std::vector<Action> LegalActions() const override;
-  std::vector<Action> LegalActions(Player player) const;
+  std::vector<Action> LegalActions(Player player) const override;
 
  protected:
+  void DoApplyAction(Action action) override;
   void DoApplyActions(const std::vector<Action>& actions) override;
 
  private:
-  int current_round_;
+  int num_rounds_played_;
   std::vector<int> coin_player_choices_;
   std::vector<int> estimator_guesses_;
   bool estimator_won_;
@@ -45,7 +49,8 @@ class PatriksCoinGame : public Game {
   int NumPlayers() const override { return 2; }
   double MinUtility() const override { return -1; }
   double MaxUtility() const override { return 1; }
-  int MaxGameLength() const override { return 3; }
+  int MaxGameLength() const override { return 6; }  // 3 rounds * 2 actions per round
+  absl::optional<double> UtilitySum() const override { return 0.0; }
 };
 
 }  // namespace patriks_coin_game

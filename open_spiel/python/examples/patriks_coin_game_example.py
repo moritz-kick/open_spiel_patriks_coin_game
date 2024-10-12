@@ -3,12 +3,18 @@ import pyspiel
 def run_test_sequence(game, sequence):
     state = game.new_initial_state()
     for i, coin_choice in enumerate(sequence):
+        if state.is_terminal():
+            print(f"Game ended before sequence completed at round {i + 1}. Game state:\n{state}")
+            return False
         legal_actions = state.legal_actions(0)  # Legal actions for the Coin Player
         if coin_choice not in legal_actions:
             print(f"Test Failed: Action {coin_choice} is not legal in round {i + 1}")
             print(f"Legal actions: {legal_actions}")
             return False
-        estimator_guess = 1  # Arbitrary guess; adjust as needed for specific test scenarios
+        # Set Estimator's guess to a value not equal to the Coin Player's choice
+        estimator_guess = (coin_choice + 1) % 6  # Ensure estimator_guess != coin_choice
+        if estimator_guess == coin_choice:
+            estimator_guess = (coin_choice + 2) % 6
         state.apply_actions([coin_choice, estimator_guess])
     print(f"Test Passed for sequence {sequence}")
     return True
