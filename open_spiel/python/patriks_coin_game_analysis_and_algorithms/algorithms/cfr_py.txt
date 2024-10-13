@@ -1,0 +1,47 @@
+import pyspiel
+
+# Load your game
+game = pyspiel.load_game("patriks_coin_game")
+
+# Wrap the game to make it sequential
+sequential_game = pyspiel.convert_to_turn_based(game)
+
+# Run CFR
+cfr_solver = pyspiel.CFRSolver(sequential_game)
+num_iterations = 1000
+for i in range(num_iterations):
+    cfr_solver.evaluate_and_update_policy()
+    if i % 100 == 0:
+        print(f"Iteration {i}")
+
+# Get the average policy
+average_policy = cfr_solver.average_policy()
+
+# Analyze the results
+initial_state = sequential_game.new_initial_state()
+print("Initial State:", initial_state)
+
+# Function to traverse the game tree and print action probabilities
+def traverse(state, average_policy, depth=0):
+    if state.is_terminal():
+        return
+    indent = "  " * depth
+    player = state.current_player()
+    info_state = state.information_state_string(player)
+    
+    # Get action probabilities using the state
+    action_probs = average_policy.action_probabilities(state)
+    
+    print(f"{indent}Player {player} Info State: {info_state}")
+    for action, prob in action_probs.items():
+        action_str = state.action_to_string(player, action)
+        print(f"{indent}  Action: {action_str}, Probability: {prob:.2f}")
+    
+    for action in state.legal_actions():
+        # Clone the state before applying the action
+        cloned_state = state.clone()
+        cloned_state.apply_action(action)
+        traverse(cloned_state, average_policy, depth + 1)
+
+# Start traversing from the initial state
+traverse(initial_state, average_policy)

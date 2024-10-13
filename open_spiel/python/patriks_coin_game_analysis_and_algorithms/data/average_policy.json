@@ -1,0 +1,564 @@
+{
+    "Current player: 0\nRound: 1\nCoin Player Choices: \nEstimator Guesses: ": {
+        "player": 0,
+        "actions": {
+            "Player 0 chose: 5": 0.00042893443618614033,
+            "Player 0 chose: 4": 0.00042893443618614033,
+            "Player 0 chose: 3": 0.3070881419971143,
+            "Player 0 chose: 2": 0.2374930476006609,
+            "Player 0 chose: 1": 0.20851292055436152,
+            "Player 0 chose: 0": 0.2460480209754909
+        }
+    },
+    "Current player: 1\nRound: 1\nEstimator Guesses: \nCoin Player Choices: ": {
+        "player": 1,
+        "actions": {
+            "Player 1 chose: 5": 0.00021122815921191163,
+            "Player 1 chose: 4": 0.0002534128160682276,
+            "Player 1 chose: 3": 0.08027521058646846,
+            "Player 1 chose: 2": 0.28451299655146717,
+            "Player 1 chose: 1": 0.37605766060381685,
+            "Player 1 chose: 0": 0.25868949128296753
+        }
+    },
+    "Current player: 0\nRound: 2\nCoin Player Choices: 5 \nEstimator Guesses: 4 ": {
+        "player": 0,
+        "actions": {
+            "Player 0 chose: 5": 0.7607667703602554,
+            "Player 0 chose: 0": 0.23923322963974467
+        }
+    },
+    "Current player: 1\nRound: 2\nEstimator Guesses: 4 \nCoin Player Choices: 5 ": {
+        "player": 1,
+        "actions": {
+            "Player 1 chose: 5": 0.6458163709228629,
+            "Player 1 chose: 4": 0.05480736572198264,
+            "Player 1 chose: 3": 0.05480736572198264,
+            "Player 1 chose: 2": 0.05480736572198264,
+            "Player 1 chose: 1": 0.05480736572198264,
+            "Player 1 chose: 0": 0.1349541661892066
+        }
+    },
+    "Current player: 0\nRound: 3\nCoin Player Choices: 5 5 \nEstimator Guesses: 4 4 ": {
+        "player": 0,
+        "actions": {
+            "Player 0 chose: 5": 0.5,
+            "Player 0 chose: 0": 0.5
+        }
+    },
+    "Current player: 1\nRound: 3\nEstimator Guesses: 4 4 \nCoin Player Choices: 5 5 ": {
+        "player": 1,
+        "actions": {
+            "Player 1 chose: 5": 0.16666666666666666,
+            "Player 1 chose: 4": 0.16666666666666666,
+            "Player 1 chose: 3": 0.16666666666666666,
+            "Player 1 chose: 2": 0.16666666666666666,
+            "Player 1 chose: 1": 0.16666666666666666,
+            "Player 1 chose: 0": 0.16666666666666666
+        }
+    },
+    "Current player: 0\nRound: 3\nCoin Player Choices: 5 5 \nEstimator Guesses: 4 3 ": {
+        "player": 0,
+        "actions": {
+            "Player 0 chose: 5": 0.5,
+            "Player 0 chose: 0": 0.5
+        }
+    },
+    "Current player: 1\nRound: 3\nEstimator Guesses: 4 3 \nCoin Player Choices: 5 5 ": {
+        "player": 1,
+        "actions": {
+            "Player 1 chose: 5": 0.16666666666666666,
+            "Player 1 chose: 4": 0.16666666666666666,
+            "Player 1 chose: 3": 0.16666666666666666,
+            "Player 1 chose: 2": 0.16666666666666666,
+            "Player 1 chose: 1": 0.16666666666666666,
+            "Player 1 chose: 0": 0.16666666666666666
+        }
+    },
+    "Current player: 0\nRound: 3\nCoin Player Choices: 5 5 \nEstimator Guesses: 4 2 ": {
+        "player": 0,
+        "actions": {
+            "Player 0 chose: 5": 0.5,
+            "Player 0 chose: 0": 0.5
+        }
+    },
+    "Current player: 1\nRound: 3\nEstimator Guesses: 4 2 \nCoin Player Choices: 5 5 ": {
+        "player": 1,
+        "actions": {
+            "Player 1 chose: 5": 0.16666666666666666,
+            "Player 1 chose: 4": 0.16666666666666666,
+            "Player 1 chose: 3": 0.16666666666666666,
+            "Player 1 chose: 2": 0.16666666666666666,
+            "Player 1 chose: 1": 0.16666666666666666,
+            "Player 1 chose: 0": 0.16666666666666666
+        }
+    },
+    "Current player: 0\nRound: 3\nCoin Player Choices: 5 5 \nEstimator Guesses: 4 1 ": {
+        "player": 0,
+        "actions": {
+            "Player 0 chose: 5": 0.5,
+            "Player 0 chose: 0": 0.5
+        }
+    },
+    "Current player: 1\nRound: 3\nEstimator Guesses: 4 1 \nCoin Player Choices: 5 5 ": {
+        "player": 1,
+        "actions": {
+            "Player 1 chose: 5": 0.16666666666666666,
+            "Player 1 chose: 4": 0.16666666666666666,
+            "Player 1 chose: 3": 0.16666666666666666,
+            "Player 1 chose: 2": 0.16666666666666666,
+            "Player 1 chose: 1": 0.16666666666666666,
+            "Player 1 chose: 0": 0.16666666666666666
+        }
+    },
+    "Current player: 0\nRound: 3\nCoin Player Choices: 5 5 \nEstimator Guesses: 4 0 ": {
+        "player": 0,
+        "actions": {
+            "Player 0 chose: 5": 0.6720722417007576,
+            "Player 0 chose: 0": 0.3279277582992423
+        }
+    },
+    "Current player: 1\nRound: 3\nEstimator Guesses: 4 0 \nCoin Player Choices: 5 5 ": {
+        "player": 1,
+        "actions": {
+            "Player 1 chose: 5": 0.3646272106804459,
+            "Player 1 chose: 4": 0.06768639465977702,
+            "Player 1 chose: 3": 0.06768639465977702,
+            "Player 1 chose: 2": 0.06768639465977702,
+            "Player 1 chose: 1": 0.06768639465977702,
+            "Player 1 chose: 0": 0.3646272106804459
+        }
+    },
+    "Current player: 0\nRound: 2\nCoin Player Choices: 5 \nEstimator Guesses: 3 ": {
+        "player": 0,
+        "actions": {
+            "Player 0 chose: 5": 0.7607667703602554,
+            "Player 0 chose: 0": 0.23923322963974467
+        }
+    },
+    "Current player: 1\nRound: 2\nEstimator Guesses: 3 \nCoin Player Choices: 5 ": {
+        "player": 1,
+        "actions": {
+            "Player 1 chose: 5": 0.9988150342241986,
+            "Player 1 chose: 4": 0.0001730159134734196,
+            "Player 1 chose: 3": 0.0001730159134734196,
+            "Player 1 chose: 2": 0.0001730159134734196,
+            "Player 1 chose: 1": 0.0001730159134734196,
+            "Player 1 chose: 0": 0.000492902121907702
+        }
+    },
+    "Current player: 0\nRound: 3\nCoin Player Choices: 5 5 \nEstimator Guesses: 3 4 ": {
+        "player": 0,
+        "actions": {
+            "Player 0 chose: 5": 0.5,
+            "Player 0 chose: 0": 0.5
+        }
+    },
+    "Current player: 1\nRound: 3\nEstimator Guesses: 3 4 \nCoin Player Choices: 5 5 ": {
+        "player": 1,
+        "actions": {
+            "Player 1 chose: 5": 0.16666666666666666,
+            "Player 1 chose: 4": 0.16666666666666666,
+            "Player 1 chose: 3": 0.16666666666666666,
+            "Player 1 chose: 2": 0.16666666666666666,
+            "Player 1 chose: 1": 0.16666666666666666,
+            "Player 1 chose: 0": 0.16666666666666666
+        }
+    },
+    "Current player: 0\nRound: 3\nCoin Player Choices: 5 5 \nEstimator Guesses: 3 3 ": {
+        "player": 0,
+        "actions": {
+            "Player 0 chose: 5": 0.5,
+            "Player 0 chose: 0": 0.5
+        }
+    },
+    "Current player: 1\nRound: 3\nEstimator Guesses: 3 3 \nCoin Player Choices: 5 5 ": {
+        "player": 1,
+        "actions": {
+            "Player 1 chose: 5": 0.16666666666666666,
+            "Player 1 chose: 4": 0.16666666666666666,
+            "Player 1 chose: 3": 0.16666666666666666,
+            "Player 1 chose: 2": 0.16666666666666666,
+            "Player 1 chose: 1": 0.16666666666666666,
+            "Player 1 chose: 0": 0.16666666666666666
+        }
+    },
+    "Current player: 0\nRound: 3\nCoin Player Choices: 5 5 \nEstimator Guesses: 3 2 ": {
+        "player": 0,
+        "actions": {
+            "Player 0 chose: 5": 0.5,
+            "Player 0 chose: 0": 0.5
+        }
+    },
+    "Current player: 1\nRound: 3\nEstimator Guesses: 3 2 \nCoin Player Choices: 5 5 ": {
+        "player": 1,
+        "actions": {
+            "Player 1 chose: 5": 0.16666666666666666,
+            "Player 1 chose: 4": 0.16666666666666666,
+            "Player 1 chose: 3": 0.16666666666666666,
+            "Player 1 chose: 2": 0.16666666666666666,
+            "Player 1 chose: 1": 0.16666666666666666,
+            "Player 1 chose: 0": 0.16666666666666666
+        }
+    },
+    "Current player: 0\nRound: 3\nCoin Player Choices: 5 5 \nEstimator Guesses: 3 1 ": {
+        "player": 0,
+        "actions": {
+            "Player 0 chose: 5": 0.5,
+            "Player 0 chose: 0": 0.5
+        }
+    },
+    "Current player: 1\nRound: 3\nEstimator Guesses: 3 1 \nCoin Player Choices: 5 5 ": {
+        "player": 1,
+        "actions": {
+            "Player 1 chose: 5": 0.16666666666666666,
+            "Player 1 chose: 4": 0.16666666666666666,
+            "Player 1 chose: 3": 0.16666666666666666,
+            "Player 1 chose: 2": 0.16666666666666666,
+            "Player 1 chose: 1": 0.16666666666666666,
+            "Player 1 chose: 0": 0.16666666666666666
+        }
+    },
+    "Current player: 0\nRound: 3\nCoin Player Choices: 5 5 \nEstimator Guesses: 3 0 ": {
+        "player": 0,
+        "actions": {
+            "Player 0 chose: 5": 0.6720722417007576,
+            "Player 0 chose: 0": 0.3279277582992423
+        }
+    },
+    "Current player: 1\nRound: 3\nEstimator Guesses: 3 0 \nCoin Player Choices: 5 5 ": {
+        "player": 1,
+        "actions": {
+            "Player 1 chose: 5": 0.38299508443056396,
+            "Player 1 chose: 4": 0.05850245778471802,
+            "Player 1 chose: 3": 0.05850245778471802,
+            "Player 1 chose: 2": 0.05850245778471802,
+            "Player 1 chose: 1": 0.05850245778471802,
+            "Player 1 chose: 0": 0.38299508443056396
+        }
+    },
+    "Current player: 0\nRound: 2\nCoin Player Choices: 5 \nEstimator Guesses: 2 ": {
+        "player": 0,
+        "actions": {
+            "Player 0 chose: 5": 0.7607667703602554,
+            "Player 0 chose: 0": 0.23923322963974467
+        }
+    },
+    "Current player: 1\nRound: 2\nEstimator Guesses: 2 \nCoin Player Choices: 5 ": {
+        "player": 1,
+        "actions": {
+            "Player 1 chose: 5": 0.999665662453585,
+            "Player 1 chose: 4": 4.8816360086300785e-05,
+            "Player 1 chose: 3": 4.8816360086300785e-05,
+            "Player 1 chose: 2": 4.8816360086300785e-05,
+            "Player 1 chose: 1": 4.8816360086300785e-05,
+            "Player 1 chose: 0": 0.00013907210606985406
+        }
+    },
+    "Current player: 0\nRound: 3\nCoin Player Choices: 5 5 \nEstimator Guesses: 2 4 ": {
+        "player": 0,
+        "actions": {
+            "Player 0 chose: 5": 0.5,
+            "Player 0 chose: 0": 0.5
+        }
+    },
+    "Current player: 1\nRound: 3\nEstimator Guesses: 2 4 \nCoin Player Choices: 5 5 ": {
+        "player": 1,
+        "actions": {
+            "Player 1 chose: 5": 0.16666666666666666,
+            "Player 1 chose: 4": 0.16666666666666666,
+            "Player 1 chose: 3": 0.16666666666666666,
+            "Player 1 chose: 2": 0.16666666666666666,
+            "Player 1 chose: 1": 0.16666666666666666,
+            "Player 1 chose: 0": 0.16666666666666666
+        }
+    },
+    "Current player: 0\nRound: 3\nCoin Player Choices: 5 5 \nEstimator Guesses: 2 3 ": {
+        "player": 0,
+        "actions": {
+            "Player 0 chose: 5": 0.5,
+            "Player 0 chose: 0": 0.5
+        }
+    },
+    "Current player: 1\nRound: 3\nEstimator Guesses: 2 3 \nCoin Player Choices: 5 5 ": {
+        "player": 1,
+        "actions": {
+            "Player 1 chose: 5": 0.16666666666666666,
+            "Player 1 chose: 4": 0.16666666666666666,
+            "Player 1 chose: 3": 0.16666666666666666,
+            "Player 1 chose: 2": 0.16666666666666666,
+            "Player 1 chose: 1": 0.16666666666666666,
+            "Player 1 chose: 0": 0.16666666666666666
+        }
+    },
+    "Current player: 0\nRound: 3\nCoin Player Choices: 5 5 \nEstimator Guesses: 2 2 ": {
+        "player": 0,
+        "actions": {
+            "Player 0 chose: 5": 0.5,
+            "Player 0 chose: 0": 0.5
+        }
+    },
+    "Current player: 1\nRound: 3\nEstimator Guesses: 2 2 \nCoin Player Choices: 5 5 ": {
+        "player": 1,
+        "actions": {
+            "Player 1 chose: 5": 0.16666666666666666,
+            "Player 1 chose: 4": 0.16666666666666666,
+            "Player 1 chose: 3": 0.16666666666666666,
+            "Player 1 chose: 2": 0.16666666666666666,
+            "Player 1 chose: 1": 0.16666666666666666,
+            "Player 1 chose: 0": 0.16666666666666666
+        }
+    },
+    "Current player: 0\nRound: 3\nCoin Player Choices: 5 5 \nEstimator Guesses: 2 1 ": {
+        "player": 0,
+        "actions": {
+            "Player 0 chose: 5": 0.5,
+            "Player 0 chose: 0": 0.5
+        }
+    },
+    "Current player: 1\nRound: 3\nEstimator Guesses: 2 1 \nCoin Player Choices: 5 5 ": {
+        "player": 1,
+        "actions": {
+            "Player 1 chose: 5": 0.16666666666666666,
+            "Player 1 chose: 4": 0.16666666666666666,
+            "Player 1 chose: 3": 0.16666666666666666,
+            "Player 1 chose: 2": 0.16666666666666666,
+            "Player 1 chose: 1": 0.16666666666666666,
+            "Player 1 chose: 0": 0.16666666666666666
+        }
+    },
+    "Current player: 0\nRound: 3\nCoin Player Choices: 5 5 \nEstimator Guesses: 2 0 ": {
+        "player": 0,
+        "actions": {
+            "Player 0 chose: 5": 0.6720722417007576,
+            "Player 0 chose: 0": 0.3279277582992423
+        }
+    },
+    "Current player: 1\nRound: 3\nEstimator Guesses: 2 0 \nCoin Player Choices: 5 5 ": {
+        "player": 1,
+        "actions": {
+            "Player 1 chose: 5": 0.38299508443056396,
+            "Player 1 chose: 4": 0.05850245778471802,
+            "Player 1 chose: 3": 0.05850245778471802,
+            "Player 1 chose: 2": 0.05850245778471802,
+            "Player 1 chose: 1": 0.05850245778471802,
+            "Player 1 chose: 0": 0.38299508443056396
+        }
+    },
+    "Current player: 0\nRound: 2\nCoin Player Choices: 5 \nEstimator Guesses: 1 ": {
+        "player": 0,
+        "actions": {
+            "Player 0 chose: 5": 0.7607667703602554,
+            "Player 0 chose: 0": 0.23923322963974467
+        }
+    },
+    "Current player: 1\nRound: 2\nEstimator Guesses: 1 \nCoin Player Choices: 5 ": {
+        "player": 1,
+        "actions": {
+            "Player 1 chose: 5": 0.9989811091043116,
+            "Player 1 chose: 4": 0.0001477314820986581,
+            "Player 1 chose: 3": 0.0001477314820986581,
+            "Player 1 chose: 2": 0.0001477314820986581,
+            "Player 1 chose: 1": 0.0001477314820986581,
+            "Player 1 chose: 0": 0.00042796496729368246
+        }
+    },
+    "Current player: 0\nRound: 3\nCoin Player Choices: 5 5 \nEstimator Guesses: 1 4 ": {
+        "player": 0,
+        "actions": {
+            "Player 0 chose: 5": 0.5,
+            "Player 0 chose: 0": 0.5
+        }
+    },
+    "Current player: 1\nRound: 3\nEstimator Guesses: 1 4 \nCoin Player Choices: 5 5 ": {
+        "player": 1,
+        "actions": {
+            "Player 1 chose: 5": 0.16666666666666666,
+            "Player 1 chose: 4": 0.16666666666666666,
+            "Player 1 chose: 3": 0.16666666666666666,
+            "Player 1 chose: 2": 0.16666666666666666,
+            "Player 1 chose: 1": 0.16666666666666666,
+            "Player 1 chose: 0": 0.16666666666666666
+        }
+    },
+    "Current player: 0\nRound: 3\nCoin Player Choices: 5 5 \nEstimator Guesses: 1 3 ": {
+        "player": 0,
+        "actions": {
+            "Player 0 chose: 5": 0.5,
+            "Player 0 chose: 0": 0.5
+        }
+    },
+    "Current player: 1\nRound: 3\nEstimator Guesses: 1 3 \nCoin Player Choices: 5 5 ": {
+        "player": 1,
+        "actions": {
+            "Player 1 chose: 5": 0.16666666666666666,
+            "Player 1 chose: 4": 0.16666666666666666,
+            "Player 1 chose: 3": 0.16666666666666666,
+            "Player 1 chose: 2": 0.16666666666666666,
+            "Player 1 chose: 1": 0.16666666666666666,
+            "Player 1 chose: 0": 0.16666666666666666
+        }
+    },
+    "Current player: 0\nRound: 3\nCoin Player Choices: 5 5 \nEstimator Guesses: 1 2 ": {
+        "player": 0,
+        "actions": {
+            "Player 0 chose: 5": 0.5,
+            "Player 0 chose: 0": 0.5
+        }
+    },
+    "Current player: 1\nRound: 3\nEstimator Guesses: 1 2 \nCoin Player Choices: 5 5 ": {
+        "player": 1,
+        "actions": {
+            "Player 1 chose: 5": 0.16666666666666666,
+            "Player 1 chose: 4": 0.16666666666666666,
+            "Player 1 chose: 3": 0.16666666666666666,
+            "Player 1 chose: 2": 0.16666666666666666,
+            "Player 1 chose: 1": 0.16666666666666666,
+            "Player 1 chose: 0": 0.16666666666666666
+        }
+    },
+    "Current player: 0\nRound: 3\nCoin Player Choices: 5 5 \nEstimator Guesses: 1 1 ": {
+        "player": 0,
+        "actions": {
+            "Player 0 chose: 5": 0.5,
+            "Player 0 chose: 0": 0.5
+        }
+    },
+    "Current player: 1\nRound: 3\nEstimator Guesses: 1 1 \nCoin Player Choices: 5 5 ": {
+        "player": 1,
+        "actions": {
+            "Player 1 chose: 5": 0.16666666666666666,
+            "Player 1 chose: 4": 0.16666666666666666,
+            "Player 1 chose: 3": 0.16666666666666666,
+            "Player 1 chose: 2": 0.16666666666666666,
+            "Player 1 chose: 1": 0.16666666666666666,
+            "Player 1 chose: 0": 0.16666666666666666
+        }
+    },
+    "Current player: 0\nRound: 3\nCoin Player Choices: 5 5 \nEstimator Guesses: 1 0 ": {
+        "player": 0,
+        "actions": {
+            "Player 0 chose: 5": 0.6720722417007576,
+            "Player 0 chose: 0": 0.3279277582992423
+        }
+    },
+    "Current player: 1\nRound: 3\nEstimator Guesses: 1 0 \nCoin Player Choices: 5 5 ": {
+        "player": 1,
+        "actions": {
+            "Player 1 chose: 5": 0.3849349102623469,
+            "Player 1 chose: 4": 0.057532544868826564,
+            "Player 1 chose: 3": 0.057532544868826564,
+            "Player 1 chose: 2": 0.057532544868826564,
+            "Player 1 chose: 1": 0.057532544868826564,
+            "Player 1 chose: 0": 0.3849349102623469
+        }
+    },
+    "Current player: 0\nRound: 2\nCoin Player Choices: 5 \nEstimator Guesses: 0 ": {
+        "player": 0,
+        "actions": {
+            "Player 0 chose: 5": 0.7607667703602554,
+            "Player 0 chose: 0": 0.23923322963974467
+        }
+    },
+    "Current player: 1\nRound: 2\nEstimator Guesses: 0 \nCoin Player Choices: 5 ": {
+        "player": 1,
+        "actions": {
+            "Player 1 chose: 5": 0.9985512104575984,
+            "Player 1 chose: 4": 0.00021475768219276258,
+            "Player 1 chose: 3": 0.00021475768219276258,
+            "Player 1 chose: 2": 0.00021475768219276258,
+            "Player 1 chose: 1": 0.00021475768219276258,
+            "Player 1 chose: 0": 0.0005897588136304868
+        }
+    },
+    "Current player: 0\nRound: 3\nCoin Player Choices: 5 5 \nEstimator Guesses: 0 4 ": {
+        "player": 0,
+        "actions": {
+            "Player 0 chose: 5": 0.5,
+            "Player 0 chose: 0": 0.5
+        }
+    },
+    "Current player: 1\nRound: 3\nEstimator Guesses: 0 4 \nCoin Player Choices: 5 5 ": {
+        "player": 1,
+        "actions": {
+            "Player 1 chose: 5": 0.16666666666666666,
+            "Player 1 chose: 4": 0.16666666666666666,
+            "Player 1 chose: 3": 0.16666666666666666,
+            "Player 1 chose: 2": 0.16666666666666666,
+            "Player 1 chose: 1": 0.16666666666666666,
+            "Player 1 chose: 0": 0.16666666666666666
+        }
+    },
+    "Current player: 0\nRound: 3\nCoin Player Choices: 5 5 \nEstimator Guesses: 0 3 ": {
+        "player": 0,
+        "actions": {
+            "Player 0 chose: 5": 0.5,
+            "Player 0 chose: 0": 0.5
+        }
+    },
+    "Current player: 1\nRound: 3\nEstimator Guesses: 0 3 \nCoin Player Choices: 5 5 ": {
+        "player": 1,
+        "actions": {
+            "Player 1 chose: 5": 0.16666666666666666,
+            "Player 1 chose: 4": 0.16666666666666666,
+            "Player 1 chose: 3": 0.16666666666666666,
+            "Player 1 chose: 2": 0.16666666666666666,
+            "Player 1 chose: 1": 0.16666666666666666,
+            "Player 1 chose: 0": 0.16666666666666666
+        }
+    },
+    "Current player: 0\nRound: 3\nCoin Player Choices: 5 5 \nEstimator Guesses: 0 2 ": {
+        "player": 0,
+        "actions": {
+            "Player 0 chose: 5": 0.5,
+            "Player 0 chose: 0": 0.5
+        }
+    },
+    "Current player: 1\nRound: 3\nEstimator Guesses: 0 2 \nCoin Player Choices: 5 5 ": {
+        "player": 1,
+        "actions": {
+            "Player 1 chose: 5": 0.16666666666666666,
+            "Player 1 chose: 4": 0.16666666666666666,
+            "Player 1 chose: 3": 0.16666666666666666,
+            "Player 1 chose: 2": 0.16666666666666666,
+            "Player 1 chose: 1": 0.16666666666666666,
+            "Player 1 chose: 0": 0.16666666666666666
+        }
+    },
+    "Current player: 0\nRound: 3\nCoin Player Choices: 5 5 \nEstimator Guesses: 0 1 ": {
+        "player": 0,
+        "actions": {
+            "Player 0 chose: 5": 0.5,
+            "Player 0 chose: 0": 0.5
+        }
+    },
+    "Current player: 1\nRound: 3\nEstimator Guesses: 0 1 \nCoin Player Choices: 5 5 ": {
+        "player": 1,
+        "actions": {
+            "Player 1 chose: 5": 0.16666666666666666,
+            "Player 1 chose: 4": 0.16666666666666666,
+            "Player 1 chose: 3": 0.16666666666666666,
+            "Player 1 chose: 2": 0.16666666666666666,
+            "Player 1 chose: 1": 0.16666666666666666,
+            "Player 1 chose: 0": 0.16666666666666666
+        }
+    },
+    "Current player: 0\nRound: 3\nCoin Player Choices: 5 5 \nEstimator Guesses: 0 0 ": {
+        "player": 0,
+        "actions": {
+            "Player 0 chose: 5": 0.6720722417007576,
+            "Player 0 chose: 0": 0.3279277582992423
+        }
+    },
+    "Current player: 1\nRound: 3\nEstimator Guesses: 0 0 \nCoin Player Choices: 5 5 ": {
+        "player": 1,
+        "actions": {
+            "Player 1 chose: 5": 0.3786183565047892,
+            "Player 1 chose: 4": 0.060690821747605386,
+            "Player 1 chose: 3": 0.060690821747605386,
+            "Player 1 chose: 2": 0.060690821747605386,
+            "Player 1 chose: 1": 0.060690821747605386,
+            "Player 1 chose: 0": 0.3786183565047892
+        }
+    }
+}

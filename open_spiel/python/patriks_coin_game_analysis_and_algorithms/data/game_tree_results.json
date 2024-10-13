@@ -1,0 +1,1217 @@
+[
+    {
+        "player": 0,
+        "round": 1,
+        "coin_player_choices": [],
+        "estimator_guesses": [],
+        "depth": 0,
+        "actions": {
+            "Player 0 chose: 5": 0.0008578688723722808,
+            "Player 0 chose: 4": 0.0008578688723722808,
+            "Player 0 chose: 3": 0.30673681902551203,
+            "Player 0 chose: 2": 0.23745508047508018,
+            "Player 0 chose: 1": 0.20850470451582834,
+            "Player 0 chose: 0": 0.24558765823883505
+        }
+    },
+    {
+        "player": 1,
+        "round": 1,
+        "estimator_guesses": [],
+        "coin_player_choices": [],
+        "depth": 1,
+        "actions": {
+            "Player 1 chose: 5": 0.00042245631842382386,
+            "Player 1 chose: 4": 0.0005068256321364558,
+            "Player 1 chose: 3": 0.07952595419310561,
+            "Player 1 chose: 2": 0.2843925061926053,
+            "Player 1 chose: 1": 0.37720658395341117,
+            "Player 1 chose: 0": 0.25794567371031757
+        }
+    },
+    {
+        "player": 0,
+        "round": 2,
+        "coin_player_choices": [
+            0
+        ],
+        "estimator_guesses": [
+            1
+        ],
+        "depth": 2,
+        "actions": {
+            "Player 0 chose: 5": 0.0005429154473376105,
+            "Player 0 chose: 4": 0.0005429154473376105,
+            "Player 0 chose: 3": 0.41191341018961003,
+            "Player 0 chose: 2": 0.3107530766724567,
+            "Player 0 chose: 1": 0.2762476822432581
+        }
+    },
+    {
+        "player": 1,
+        "round": 2,
+        "estimator_guesses": [
+            1
+        ],
+        "coin_player_choices": [
+            0
+        ],
+        "depth": 3,
+        "actions": {
+            "Player 1 chose: 5": 0.0005768677615236763,
+            "Player 1 chose: 4": 0.0005768677615236759,
+            "Player 1 chose: 3": 0.17027458883161956,
+            "Player 1 chose: 2": 0.37924080369989926,
+            "Player 1 chose: 1": 0.44925723119005073,
+            "Player 1 chose: 0": 7.364075538302044e-05
+        }
+    },
+    {
+        "player": 0,
+        "round": 3,
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "estimator_guesses": [
+            1,
+            0
+        ],
+        "depth": 4,
+        "actions": {
+            "Player 0 chose: 5": 0.25,
+            "Player 0 chose: 4": 0.25,
+            "Player 0 chose: 3": 0.25,
+            "Player 0 chose: 2": 0.25
+        }
+    },
+    {
+        "player": 1,
+        "round": 3,
+        "estimator_guesses": [
+            1,
+            0
+        ],
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "depth": 5,
+        "actions": {
+            "Player 1 chose: 5": 0.16666666666666666,
+            "Player 1 chose: 4": 0.16666666666666666,
+            "Player 1 chose: 3": 0.16666666666666666,
+            "Player 1 chose: 2": 0.16666666666666666,
+            "Player 1 chose: 1": 0.16666666666666666,
+            "Player 1 chose: 0": 0.16666666666666666
+        }
+    },
+    {
+        "player": 0,
+        "round": 3,
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "estimator_guesses": [
+            1,
+            2
+        ],
+        "depth": 4,
+        "actions": {
+            "Player 0 chose: 5": 0.2484742969982233,
+            "Player 0 chose: 4": 0.24847429699822324,
+            "Player 0 chose: 3": 0.2515257030017768,
+            "Player 0 chose: 2": 0.25152570300177685
+        }
+    },
+    {
+        "player": 1,
+        "round": 3,
+        "estimator_guesses": [
+            1,
+            2
+        ],
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "depth": 5,
+        "actions": {
+            "Player 1 chose: 5": 0.25034942646544744,
+            "Player 1 chose: 4": 0.25034942646544767,
+            "Player 1 chose: 3": 0.24961821029960835,
+            "Player 1 chose: 2": 0.24961821029960835,
+            "Player 1 chose: 1": 3.2363234944031916e-05,
+            "Player 1 chose: 0": 3.2363234944031916e-05
+        }
+    },
+    {
+        "player": 0,
+        "round": 3,
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "estimator_guesses": [
+            1,
+            3
+        ],
+        "depth": 4,
+        "actions": {
+            "Player 0 chose: 5": 0.2516914613951259,
+            "Player 0 chose: 4": 0.25169146139512616,
+            "Player 0 chose: 3": 0.24830853860487412,
+            "Player 0 chose: 2": 0.24830853860487376
+        }
+    },
+    {
+        "player": 1,
+        "round": 3,
+        "estimator_guesses": [
+            1,
+            3
+        ],
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "depth": 5,
+        "actions": {
+            "Player 1 chose: 5": 0.2504347747365833,
+            "Player 1 chose: 4": 0.2504347747365836,
+            "Player 1 chose: 3": 0.24949314487071286,
+            "Player 1 chose: 2": 0.24949314487071209,
+            "Player 1 chose: 1": 7.208039270404775e-05,
+            "Player 1 chose: 0": 7.208039270404775e-05
+        }
+    },
+    {
+        "player": 0,
+        "round": 3,
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "estimator_guesses": [
+            1,
+            4
+        ],
+        "depth": 4,
+        "actions": {
+            "Player 0 chose: 5": 0.0006504371367665002,
+            "Player 0 chose: 4": 0.0006504371367665002,
+            "Player 0 chose: 3": 0.49934956286323356,
+            "Player 0 chose: 2": 0.49934956286323356
+        }
+    },
+    {
+        "player": 1,
+        "round": 3,
+        "estimator_guesses": [
+            1,
+            4
+        ],
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "depth": 5,
+        "actions": {
+            "Player 1 chose: 5": 0.2393619820267945,
+            "Player 1 chose: 4": 0.2393619820267945,
+            "Player 1 chose: 3": 0.23936198202679443,
+            "Player 1 chose: 2": 0.23936198202679443,
+            "Player 1 chose: 1": 0.02127603594641105,
+            "Player 1 chose: 0": 0.02127603594641105
+        }
+    },
+    {
+        "player": 0,
+        "round": 3,
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "estimator_guesses": [
+            1,
+            5
+        ],
+        "depth": 4,
+        "actions": {
+            "Player 0 chose: 5": 0.0006504371367665002,
+            "Player 0 chose: 4": 0.0006504371367665002,
+            "Player 0 chose: 3": 0.49934956286323356,
+            "Player 0 chose: 2": 0.49934956286323356
+        }
+    },
+    {
+        "player": 1,
+        "round": 3,
+        "estimator_guesses": [
+            1,
+            5
+        ],
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "depth": 5,
+        "actions": {
+            "Player 1 chose: 5": 0.2393619820267945,
+            "Player 1 chose: 4": 0.2393619820267945,
+            "Player 1 chose: 3": 0.23936198202679443,
+            "Player 1 chose: 2": 0.23936198202679443,
+            "Player 1 chose: 1": 0.02127603594641105,
+            "Player 1 chose: 0": 0.02127603594641105
+        }
+    },
+    {
+        "player": 0,
+        "round": 2,
+        "coin_player_choices": [
+            0
+        ],
+        "estimator_guesses": [
+            2
+        ],
+        "depth": 2,
+        "actions": {
+            "Player 0 chose: 5": 0.0005429154473376104,
+            "Player 0 chose: 4": 0.0005429154473376104,
+            "Player 0 chose: 3": 0.4126825018298239,
+            "Player 0 chose: 2": 0.3101320867534122,
+            "Player 0 chose: 1": 0.2760995805220887
+        }
+    },
+    {
+        "player": 1,
+        "round": 2,
+        "estimator_guesses": [
+            2
+        ],
+        "coin_player_choices": [
+            0
+        ],
+        "depth": 3,
+        "actions": {
+            "Player 1 chose: 5": 0.000613084194261257,
+            "Player 1 chose: 4": 0.000613084194261257,
+            "Player 1 chose: 3": 0.1705001866772782,
+            "Player 1 chose: 2": 0.37878255826327867,
+            "Player 1 chose: 1": 0.4493934125860803,
+            "Player 1 chose: 0": 9.767408484021505e-05
+        }
+    },
+    {
+        "player": 0,
+        "round": 3,
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "estimator_guesses": [
+            2,
+            0
+        ],
+        "depth": 4,
+        "actions": {
+            "Player 0 chose: 5": 0.25,
+            "Player 0 chose: 4": 0.25,
+            "Player 0 chose: 3": 0.25,
+            "Player 0 chose: 2": 0.25
+        }
+    },
+    {
+        "player": 1,
+        "round": 3,
+        "estimator_guesses": [
+            2,
+            0
+        ],
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "depth": 5,
+        "actions": {
+            "Player 1 chose: 5": 0.16666666666666666,
+            "Player 1 chose: 4": 0.16666666666666666,
+            "Player 1 chose: 3": 0.16666666666666666,
+            "Player 1 chose: 2": 0.16666666666666666,
+            "Player 1 chose: 1": 0.16666666666666666,
+            "Player 1 chose: 0": 0.16666666666666666
+        }
+    },
+    {
+        "player": 0,
+        "round": 3,
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "estimator_guesses": [
+            2,
+            2
+        ],
+        "depth": 4,
+        "actions": {
+            "Player 0 chose: 5": 0.24967112159459448,
+            "Player 0 chose: 4": 0.24967112159459426,
+            "Player 0 chose: 3": 0.25012580883266183,
+            "Player 0 chose: 2": 0.2505319479781496
+        }
+    },
+    {
+        "player": 1,
+        "round": 3,
+        "estimator_guesses": [
+            2,
+            2
+        ],
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "depth": 5,
+        "actions": {
+            "Player 1 chose: 5": 0.24974470632795645,
+            "Player 1 chose: 4": 0.24974470632795545,
+            "Player 1 chose: 3": 0.2502615680365435,
+            "Player 1 chose: 2": 0.25016306490555373,
+            "Player 1 chose: 1": 4.297720099540825e-05,
+            "Player 1 chose: 0": 4.297720099540825e-05
+        }
+    },
+    {
+        "player": 0,
+        "round": 3,
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "estimator_guesses": [
+            2,
+            3
+        ],
+        "depth": 4,
+        "actions": {
+            "Player 0 chose: 5": 0.2501938687533244,
+            "Player 0 chose: 4": 0.2501938687533241,
+            "Player 0 chose: 3": 0.25033508360972934,
+            "Player 0 chose: 2": 0.24927717888362216
+        }
+    },
+    {
+        "player": 1,
+        "round": 3,
+        "estimator_guesses": [
+            2,
+            3
+        ],
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "depth": 5,
+        "actions": {
+            "Player 1 chose: 5": 0.24737041816143537,
+            "Player 1 chose: 4": 0.247370418161435,
+            "Player 1 chose: 3": 0.2552485464069103,
+            "Player 1 chose: 2": 0.24981966130169764,
+            "Player 1 chose: 1": 9.54779842607954e-05,
+            "Player 1 chose: 0": 9.54779842607954e-05
+        }
+    },
+    {
+        "player": 0,
+        "round": 3,
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "estimator_guesses": [
+            2,
+            4
+        ],
+        "depth": 4,
+        "actions": {
+            "Player 0 chose: 5": 0.33470273591202165,
+            "Player 0 chose: 4": 0.33470273591202165,
+            "Player 0 chose: 3": 0.0022824984315913074,
+            "Player 0 chose: 2": 0.32831202974436546
+        }
+    },
+    {
+        "player": 1,
+        "round": 3,
+        "estimator_guesses": [
+            2,
+            4
+        ],
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "depth": 5,
+        "actions": {
+            "Player 1 chose: 5": 0.06173061618199168,
+            "Player 1 chose: 4": 0.06173061618199168,
+            "Player 1 chose: 3": 0.752095125172701,
+            "Player 1 chose: 2": 0.07133832905802896,
+            "Player 1 chose: 1": 0.026552656702643316,
+            "Player 1 chose: 0": 0.026552656702643316
+        }
+    },
+    {
+        "player": 0,
+        "round": 3,
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "estimator_guesses": [
+            2,
+            5
+        ],
+        "depth": 4,
+        "actions": {
+            "Player 0 chose: 5": 0.33470273591202165,
+            "Player 0 chose: 4": 0.33470273591202165,
+            "Player 0 chose: 3": 0.002282498431591308,
+            "Player 0 chose: 2": 0.32831202974436546
+        }
+    },
+    {
+        "player": 1,
+        "round": 3,
+        "estimator_guesses": [
+            2,
+            5
+        ],
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "depth": 5,
+        "actions": {
+            "Player 1 chose: 5": 0.06173061618199168,
+            "Player 1 chose: 4": 0.06173061618199168,
+            "Player 1 chose: 3": 0.752095125172701,
+            "Player 1 chose: 2": 0.07133832905802896,
+            "Player 1 chose: 1": 0.026552656702643316,
+            "Player 1 chose: 0": 0.026552656702643316
+        }
+    },
+    {
+        "player": 0,
+        "round": 2,
+        "coin_player_choices": [
+            0
+        ],
+        "estimator_guesses": [
+            3
+        ],
+        "depth": 2,
+        "actions": {
+            "Player 0 chose: 5": 0.0005429154473376098,
+            "Player 0 chose: 4": 0.0005429154473376098,
+            "Player 0 chose: 3": 0.4097102204648118,
+            "Player 0 chose: 2": 0.3119508527057895,
+            "Player 0 chose: 1": 0.2772530959347235
+        }
+    },
+    {
+        "player": 1,
+        "round": 2,
+        "estimator_guesses": [
+            3
+        ],
+        "coin_player_choices": [
+            0
+        ],
+        "depth": 3,
+        "actions": {
+            "Player 1 chose: 5": 0.0008379605736645404,
+            "Player 1 chose: 4": 0.0008379605736645404,
+            "Player 1 chose: 3": 0.16666223324414772,
+            "Player 1 chose: 2": 0.37942402300329314,
+            "Player 1 chose: 1": 0.45188853062804313,
+            "Player 1 chose: 0": 0.0003492919771868155
+        }
+    },
+    {
+        "player": 0,
+        "round": 3,
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "estimator_guesses": [
+            3,
+            0
+        ],
+        "depth": 4,
+        "actions": {
+            "Player 0 chose: 5": 0.25,
+            "Player 0 chose: 4": 0.25,
+            "Player 0 chose: 3": 0.25,
+            "Player 0 chose: 2": 0.25
+        }
+    },
+    {
+        "player": 1,
+        "round": 3,
+        "estimator_guesses": [
+            3,
+            0
+        ],
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "depth": 5,
+        "actions": {
+            "Player 1 chose: 5": 0.16666666666666666,
+            "Player 1 chose: 4": 0.16666666666666666,
+            "Player 1 chose: 3": 0.16666666666666666,
+            "Player 1 chose: 2": 0.16666666666666666,
+            "Player 1 chose: 1": 0.16666666666666666,
+            "Player 1 chose: 0": 0.16666666666666666
+        }
+    },
+    {
+        "player": 0,
+        "round": 3,
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "estimator_guesses": [
+            3,
+            2
+        ],
+        "depth": 4,
+        "actions": {
+            "Player 0 chose: 5": 0.25045498716896275,
+            "Player 0 chose: 4": 0.25045498716896264,
+            "Player 0 chose: 3": 0.24983803388566803,
+            "Player 0 chose: 2": 0.24925199177640645
+        }
+    },
+    {
+        "player": 1,
+        "round": 3,
+        "estimator_guesses": [
+            3,
+            2
+        ],
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "depth": 5,
+        "actions": {
+            "Player 1 chose: 5": 0.2513494519703594,
+            "Player 1 chose: 4": 0.2513494519703598,
+            "Player 1 chose: 3": 0.24891115016846188,
+            "Player 1 chose: 2": 0.24808308430061005,
+            "Player 1 chose: 1": 0.00015343079510448028,
+            "Player 1 chose: 0": 0.00015343079510448028
+        }
+    },
+    {
+        "player": 0,
+        "round": 3,
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "estimator_guesses": [
+            3,
+            3
+        ],
+        "depth": 4,
+        "actions": {
+            "Player 0 chose: 5": 0.2450408059130342,
+            "Player 0 chose: 4": 0.24504080591303165,
+            "Player 0 chose: 3": 0.25564583481658637,
+            "Player 0 chose: 2": 0.2542725533573478
+        }
+    },
+    {
+        "player": 1,
+        "round": 3,
+        "estimator_guesses": [
+            3,
+            3
+        ],
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "depth": 5,
+        "actions": {
+            "Player 1 chose: 5": 0.25299088924556634,
+            "Player 1 chose: 4": 0.25299088924556995,
+            "Player 1 chose: 3": 0.23630935986310225,
+            "Player 1 chose: 2": 0.2570102591081865,
+            "Player 1 chose: 1": 0.00034930126878748104,
+            "Player 1 chose: 0": 0.00034930126878748104
+        }
+    },
+    {
+        "player": 0,
+        "round": 3,
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "estimator_guesses": [
+            3,
+            4
+        ],
+        "depth": 4,
+        "actions": {
+            "Player 0 chose: 5": 0.33243502706867395,
+            "Player 0 chose: 4": 0.33243502706867395,
+            "Player 0 chose: 3": 0.0020016099247130263,
+            "Player 0 chose: 2": 0.3331283359379392
+        }
+    },
+    {
+        "player": 1,
+        "round": 3,
+        "estimator_guesses": [
+            3,
+            4
+        ],
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "depth": 5,
+        "actions": {
+            "Player 1 chose: 5": 0.16151259919870428,
+            "Player 1 chose: 4": 0.16151259919870428,
+            "Player 1 chose: 3": 0.37651693132376785,
+            "Player 1 chose: 2": 0.16151259919870428,
+            "Player 1 chose: 1": 0.06947263554005968,
+            "Player 1 chose: 0": 0.06947263554005968
+        }
+    },
+    {
+        "player": 0,
+        "round": 3,
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "estimator_guesses": [
+            3,
+            5
+        ],
+        "depth": 4,
+        "actions": {
+            "Player 0 chose: 5": 0.33243502706867395,
+            "Player 0 chose: 4": 0.33243502706867395,
+            "Player 0 chose: 3": 0.0020016099247130263,
+            "Player 0 chose: 2": 0.3331283359379392
+        }
+    },
+    {
+        "player": 1,
+        "round": 3,
+        "estimator_guesses": [
+            3,
+            5
+        ],
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "depth": 5,
+        "actions": {
+            "Player 1 chose: 5": 0.16151259919870428,
+            "Player 1 chose: 4": 0.16151259919870428,
+            "Player 1 chose: 3": 0.37651693132376785,
+            "Player 1 chose: 2": 0.16151259919870428,
+            "Player 1 chose: 1": 0.06947263554005968,
+            "Player 1 chose: 0": 0.06947263554005968
+        }
+    },
+    {
+        "player": 0,
+        "round": 2,
+        "coin_player_choices": [
+            0
+        ],
+        "estimator_guesses": [
+            4
+        ],
+        "depth": 2,
+        "actions": {
+            "Player 0 chose: 5": 0.0005429154473376109,
+            "Player 0 chose: 4": 0.0005429154473376109,
+            "Player 0 chose: 3": 0.3672110470614584,
+            "Player 0 chose: 2": 0.5213391952180209,
+            "Player 0 chose: 1": 0.11036392682584556
+        }
+    },
+    {
+        "player": 1,
+        "round": 2,
+        "estimator_guesses": [
+            4
+        ],
+        "coin_player_choices": [
+            0
+        ],
+        "depth": 3,
+        "actions": {
+            "Player 1 chose: 5": 0.10107769509161484,
+            "Player 1 chose: 4": 0.10107769509161484,
+            "Player 1 chose: 3": 0.21752800951776305,
+            "Player 1 chose: 2": 0.15320172442870764,
+            "Player 1 chose: 1": 0.3723075101483171,
+            "Player 1 chose: 0": 0.054807365721982644
+        }
+    },
+    {
+        "player": 0,
+        "round": 3,
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "estimator_guesses": [
+            4,
+            0
+        ],
+        "depth": 4,
+        "actions": {
+            "Player 0 chose: 5": 0.25,
+            "Player 0 chose: 4": 0.25,
+            "Player 0 chose: 3": 0.25,
+            "Player 0 chose: 2": 0.25
+        }
+    },
+    {
+        "player": 1,
+        "round": 3,
+        "estimator_guesses": [
+            4,
+            0
+        ],
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "depth": 5,
+        "actions": {
+            "Player 1 chose: 5": 0.16666666666666666,
+            "Player 1 chose: 4": 0.16666666666666666,
+            "Player 1 chose: 3": 0.16666666666666666,
+            "Player 1 chose: 2": 0.16666666666666666,
+            "Player 1 chose: 1": 0.16666666666666666,
+            "Player 1 chose: 0": 0.16666666666666666
+        }
+    },
+    {
+        "player": 0,
+        "round": 3,
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "estimator_guesses": [
+            4,
+            2
+        ],
+        "depth": 4,
+        "actions": {
+            "Player 0 chose: 5": 0.20474702145053533,
+            "Player 0 chose: 4": 0.20474702145053583,
+            "Player 0 chose: 3": 0.2952529785494644,
+            "Player 0 chose: 2": 0.2952529785494644
+        }
+    },
+    {
+        "player": 1,
+        "round": 3,
+        "estimator_guesses": [
+            4,
+            2
+        ],
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "depth": 5,
+        "actions": {
+            "Player 1 chose: 5": 0.24127790508824878,
+            "Player 1 chose: 4": 0.2412779050882486,
+            "Player 1 chose: 3": 0.19909769454859133,
+            "Player 1 chose: 2": 0.19909769454859133,
+            "Player 1 chose: 1": 0.05962440036315999,
+            "Player 1 chose: 0": 0.05962440036315999
+        }
+    },
+    {
+        "player": 0,
+        "round": 3,
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "estimator_guesses": [
+            4,
+            3
+        ],
+        "depth": 4,
+        "actions": {
+            "Player 0 chose: 5": 0.1262286358690456,
+            "Player 0 chose: 4": 0.1262286358690456,
+            "Player 0 chose: 3": 0.37377136413095446,
+            "Player 0 chose: 2": 0.37377136413095446
+        }
+    },
+    {
+        "player": 1,
+        "round": 3,
+        "estimator_guesses": [
+            4,
+            3
+        ],
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "depth": 5,
+        "actions": {
+            "Player 1 chose: 5": 0.3097577732646317,
+            "Player 1 chose: 4": 0.3097577732646317,
+            "Player 1 chose: 3": 0.1482496531173126,
+            "Player 1 chose: 2": 0.14824965311731267,
+            "Player 1 chose: 1": 0.04199257361805566,
+            "Player 1 chose: 0": 0.04199257361805566
+        }
+    },
+    {
+        "player": 0,
+        "round": 3,
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "estimator_guesses": [
+            4,
+            4
+        ],
+        "depth": 4,
+        "actions": {
+            "Player 0 chose: 5": 0.46665004530769655,
+            "Player 0 chose: 4": 0.46665004530769655,
+            "Player 0 chose: 3": 0.03334995469230344,
+            "Player 0 chose: 2": 0.03334995469230344
+        }
+    },
+    {
+        "player": 1,
+        "round": 3,
+        "estimator_guesses": [
+            4,
+            4
+        ],
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "depth": 5,
+        "actions": {
+            "Player 1 chose: 5": 0.17475523830511536,
+            "Player 1 chose: 4": 0.17475523830511536,
+            "Player 1 chose: 3": 0.23487308330051296,
+            "Player 1 chose: 2": 0.23487308330051296,
+            "Player 1 chose: 1": 0.09037167839437169,
+            "Player 1 chose: 0": 0.09037167839437169
+        }
+    },
+    {
+        "player": 0,
+        "round": 3,
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "estimator_guesses": [
+            4,
+            5
+        ],
+        "depth": 4,
+        "actions": {
+            "Player 0 chose: 5": 0.46665004530769655,
+            "Player 0 chose: 4": 0.46665004530769655,
+            "Player 0 chose: 3": 0.03334995469230344,
+            "Player 0 chose: 2": 0.03334995469230344
+        }
+    },
+    {
+        "player": 1,
+        "round": 3,
+        "estimator_guesses": [
+            4,
+            5
+        ],
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "depth": 5,
+        "actions": {
+            "Player 1 chose: 5": 0.17475523830511536,
+            "Player 1 chose: 4": 0.17475523830511536,
+            "Player 1 chose: 3": 0.23487308330051296,
+            "Player 1 chose: 2": 0.23487308330051296,
+            "Player 1 chose: 1": 0.09037167839437169,
+            "Player 1 chose: 0": 0.09037167839437169
+        }
+    },
+    {
+        "player": 0,
+        "round": 2,
+        "coin_player_choices": [
+            0
+        ],
+        "estimator_guesses": [
+            5
+        ],
+        "depth": 2,
+        "actions": {
+            "Player 0 chose: 5": 0.0005429154473376106,
+            "Player 0 chose: 4": 0.0005429154473376106,
+            "Player 0 chose: 3": 0.365283313038302,
+            "Player 0 chose: 2": 0.2782795026043796,
+            "Player 0 chose: 1": 0.3553513534626432
+        }
+    },
+    {
+        "player": 1,
+        "round": 2,
+        "estimator_guesses": [
+            5
+        ],
+        "coin_player_choices": [
+            0
+        ],
+        "depth": 3,
+        "actions": {
+            "Player 1 chose: 5": 0.11321717419428684,
+            "Player 1 chose: 4": 0.11321717419428684,
+            "Player 1 chose: 3": 0.16214054783117007,
+            "Player 1 chose: 2": 0.23311846396921634,
+            "Player 1 chose: 1": 0.31255362212292465,
+            "Player 1 chose: 0": 0.06575301768811535
+        }
+    },
+    {
+        "player": 0,
+        "round": 3,
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "estimator_guesses": [
+            5,
+            0
+        ],
+        "depth": 4,
+        "actions": {
+            "Player 0 chose: 5": 0.25,
+            "Player 0 chose: 4": 0.25,
+            "Player 0 chose: 3": 0.25,
+            "Player 0 chose: 2": 0.25
+        }
+    },
+    {
+        "player": 1,
+        "round": 3,
+        "estimator_guesses": [
+            5,
+            0
+        ],
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "depth": 5,
+        "actions": {
+            "Player 1 chose: 5": 0.16666666666666666,
+            "Player 1 chose: 4": 0.16666666666666666,
+            "Player 1 chose: 3": 0.16666666666666666,
+            "Player 1 chose: 2": 0.16666666666666666,
+            "Player 1 chose: 1": 0.16666666666666666,
+            "Player 1 chose: 0": 0.16666666666666666
+        }
+    },
+    {
+        "player": 0,
+        "round": 3,
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "estimator_guesses": [
+            5,
+            2
+        ],
+        "depth": 4,
+        "actions": {
+            "Player 0 chose: 5": 0.3134420703787866,
+            "Player 0 chose: 4": 0.31344207037877303,
+            "Player 0 chose: 3": 0.18655792962121723,
+            "Player 0 chose: 2": 0.1865579296212233
+        }
+    },
+    {
+        "player": 1,
+        "round": 3,
+        "estimator_guesses": [
+            5,
+            2
+        ],
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "depth": 5,
+        "actions": {
+            "Player 1 chose: 5": 0.18814629327141658,
+            "Player 1 chose: 4": 0.18814629327141977,
+            "Player 1 chose: 3": 0.2648439757327595,
+            "Player 1 chose: 2": 0.2648439757327561,
+            "Player 1 chose: 1": 0.047009730995824034,
+            "Player 1 chose: 0": 0.047009730995824034
+        }
+    },
+    {
+        "player": 0,
+        "round": 3,
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "estimator_guesses": [
+            5,
+            3
+        ],
+        "depth": 4,
+        "actions": {
+            "Player 0 chose: 5": 0.3343241111076536,
+            "Player 0 chose: 4": 0.3343241111076536,
+            "Player 0 chose: 3": 0.1656758888923465,
+            "Player 0 chose: 2": 0.16567588889234633
+        }
+    },
+    {
+        "player": 1,
+        "round": 3,
+        "estimator_guesses": [
+            5,
+            3
+        ],
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "depth": 5,
+        "actions": {
+            "Player 1 chose: 5": 0.19379855830233653,
+            "Player 1 chose: 4": 0.19379855830233653,
+            "Player 1 chose: 3": 0.23861294253480433,
+            "Player 1 chose: 2": 0.23861294253480433,
+            "Player 1 chose: 1": 0.06758849916285915,
+            "Player 1 chose: 0": 0.06758849916285915
+        }
+    },
+    {
+        "player": 0,
+        "round": 3,
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "estimator_guesses": [
+            5,
+            4
+        ],
+        "depth": 4,
+        "actions": {
+            "Player 0 chose: 5": 0.4510499133293447,
+            "Player 0 chose: 4": 0.4510499133293447,
+            "Player 0 chose: 3": 0.04895008667065537,
+            "Player 0 chose: 2": 0.04895008667065537
+        }
+    },
+    {
+        "player": 1,
+        "round": 3,
+        "estimator_guesses": [
+            5,
+            4
+        ],
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "depth": 5,
+        "actions": {
+            "Player 1 chose: 5": 0.18717592253653315,
+            "Player 1 chose: 4": 0.18717592253653315,
+            "Player 1 chose: 3": 0.2160292549522936,
+            "Player 1 chose: 2": 0.21602925495229375,
+            "Player 1 chose: 1": 0.0967948225111731,
+            "Player 1 chose: 0": 0.0967948225111731
+        }
+    },
+    {
+        "player": 0,
+        "round": 3,
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "estimator_guesses": [
+            5,
+            5
+        ],
+        "depth": 4,
+        "actions": {
+            "Player 0 chose: 5": 0.4510499133293447,
+            "Player 0 chose: 4": 0.4510499133293447,
+            "Player 0 chose: 3": 0.04895008667065537,
+            "Player 0 chose: 2": 0.04895008667065537
+        }
+    },
+    {
+        "player": 1,
+        "round": 3,
+        "estimator_guesses": [
+            5,
+            5
+        ],
+        "coin_player_choices": [
+            0,
+            1
+        ],
+        "depth": 5,
+        "actions": {
+            "Player 1 chose: 5": 0.18717592253653315,
+            "Player 1 chose: 4": 0.18717592253653315,
+            "Player 1 chose: 3": 0.2160292549522936,
+            "Player 1 chose: 2": 0.21602925495229375,
+            "Player 1 chose: 1": 0.0967948225111731,
+            "Player 1 chose: 0": 0.0967948225111731
+        }
+    }
+]

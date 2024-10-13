@@ -1,4 +1,6 @@
 set(GAME_SOURCES
+  alice_bob_guessing_game/alice_bob_guessing_game.cc
+  alice_bob_guessing_game/alice_bob_guessing_game.h
   amazons/amazons.cc
   amazons/amazons.h
   backgammon/backgammon.cc
@@ -283,6 +285,10 @@ target_compile_definitions(bridge_double_dummy_solver PUBLIC DDS_NO_STATIC_INIT)
 add_executable(2048_test twenty_forty_eight/2048_test.cc ${OPEN_SPIEL_OBJECTS}
                $<TARGET_OBJECTS:tests>)
 add_test(2048_test 2048_test)
+
+add_executable(alice_bob_guessing_game_test alice_bob_guessing_game/alice_bob_guessing_game_test.cc ${OPEN_SPIEL_OBJECTS}
+               $<TARGET_OBJECTS:tests>)
+add_test(alice_bob_guessing_game_test alice_bob_guessing_game_test)
 
 add_executable(amazons_test amazons/amazons_test.cc ${OPEN_SPIEL_OBJECTS}
                $<TARGET_OBJECTS:tests>)

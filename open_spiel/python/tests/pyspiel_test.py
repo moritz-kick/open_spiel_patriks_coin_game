@@ -24,6 +24,7 @@ import pyspiel
 # Specify game names in alphabetical order, to make the test easier to read.
 EXPECTED_GAMES = frozenset([
     "2048",
+    "alice_bob_guessing_game",
     "add_noise",
     "amazons",
     "backgammon",

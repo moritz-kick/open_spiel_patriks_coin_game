@@ -47,21 +47,67 @@ LegalActions(1) = [0, 1, 2, 3, 4, 5]
 StringLegalActions(0) = ["Player 0 chose: 0", "Player 0 chose: 1", "Player 0 chose: 2", "Player 0 chose: 3", "Player 0 chose: 4", "Player 0 chose: 5"]
 StringLegalActions(1) = ["Player 1 chose: 0", "Player 1 chose: 1", "Player 1 chose: 2", "Player 1 chose: 3", "Player 1 chose: 4", "Player 1 chose: 5"]
 
-# Apply joint action ["Player 0 chose: 5", "Player 1 chose: 5"]
-actions: [5, 5]
+# Apply joint action ["Player 0 chose: 4", "Player 1 chose: 1"]
+actions: [4, 1]
 
 # State 1
 # Game State:
 # Current Round: 2
-# Coin Player Choices: 5
-# Estimator Guesses: 5
+# Coin Player Choices: 4
+# Estimator Guesses: 1
+IsTerminal() = False
+History() = [4, 1]
+HistoryString() = "4, 1"
+IsChanceNode() = False
+IsSimultaneousNode() = True
+CurrentPlayer() = -2
+InformationStateString(0) = "Round: 2\nCoin Player Choices: 4 \nEstimator Guesses: 1 "
+InformationStateString(1) = "Round: 2\nEstimator Guesses: 1 \nCoin Player Choices: 4 "
+Rewards() = [0, 0]
+Returns() = [0, 0]
+LegalActions(0) = [0, 5]
+LegalActions(1) = [0, 1, 2, 3, 4, 5]
+StringLegalActions(0) = ["Player 0 chose: 0", "Player 0 chose: 5"]
+StringLegalActions(1) = ["Player 1 chose: 0", "Player 1 chose: 1", "Player 1 chose: 2", "Player 1 chose: 3", "Player 1 chose: 4", "Player 1 chose: 5"]
+
+# Apply joint action ["Player 0 chose: 0", "Player 1 chose: 2"]
+actions: [0, 2]
+
+# State 2
+# Game State:
+# Current Round: 3
+# Coin Player Choices: 4 0
+# Estimator Guesses: 1 2
+IsTerminal() = False
+History() = [4, 1, 0, 2]
+HistoryString() = "4, 1, 0, 2"
+IsChanceNode() = False
+IsSimultaneousNode() = True
+CurrentPlayer() = -2
+InformationStateString(0) = "Round: 3\nCoin Player Choices: 4 0 \nEstimator Guesses: 1 2 "
+InformationStateString(1) = "Round: 3\nEstimator Guesses: 1 2 \nCoin Player Choices: 4 0 "
+Rewards() = [0, 0]
+Returns() = [0, 0]
+LegalActions(0) = [5]
+LegalActions(1) = [0, 1, 2, 3, 4, 5]
+StringLegalActions(0) = ["Player 0 chose: 5"]
+StringLegalActions(1) = ["Player 1 chose: 0", "Player 1 chose: 1", "Player 1 chose: 2", "Player 1 chose: 3", "Player 1 chose: 4", "Player 1 chose: 5"]
+
+# Apply joint action ["Player 0 chose: 5", "Player 1 chose: 1"]
+actions: [5, 1]
+
+# State 3
+# Game State:
+# Current Round: 4
+# Coin Player Choices: 4 0 5
+# Estimator Guesses: 1 2 1
 IsTerminal() = True
-History() = [5, 5]
-HistoryString() = "5, 5"
+History() = [4, 1, 0, 2, 5, 1]
+HistoryString() = "4, 1, 0, 2, 5, 1"
 IsChanceNode() = False
 IsSimultaneousNode() = False
 CurrentPlayer() = -4
-InformationStateString(0) = "Round: 2\nCoin Player Choices: 5 \nEstimator Guesses: 5 "
-InformationStateString(1) = "Round: 2\nEstimator Guesses: 5 \nCoin Player Choices: 5 "
-Rewards() = [-1, 1]
-Returns() = [-1, 1]
+InformationStateString(0) = "Round: 4\nCoin Player Choices: 4 0 5 \nEstimator Guesses: 1 2 1 "
+InformationStateString(1) = "Round: 4\nEstimator Guesses: 1 2 1 \nCoin Player Choices: 4 0 5 "
+Rewards() = [1, -1]
+Returns() = [1, -1]
