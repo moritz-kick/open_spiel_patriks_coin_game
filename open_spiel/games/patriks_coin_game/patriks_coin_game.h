@@ -11,6 +11,9 @@ namespace patriks_coin_game {
 
 class PatriksCoinGame;
 
+/**
+ * @brief Represents the state of Patrik's Coin Game.
+ */
 class PatriksCoinGameState : public State {
  public:
   explicit PatriksCoinGameState(std::shared_ptr<const Game> game);
@@ -23,6 +26,7 @@ class PatriksCoinGameState : public State {
   std::vector<double> Returns() const override;
   std::vector<double> Rewards() const override;
   std::string InformationStateString(Player player) const override;
+  void InformationStateTensor(Player player, std::vector<float>* values) const override;
   std::unique_ptr<State> Clone() const override;
 
   std::vector<Action> LegalActions() const override;
@@ -41,6 +45,9 @@ class PatriksCoinGameState : public State {
   int last_non_zero_choice_;
 };
 
+/**
+ * @brief Defines the game Patrik's Coin Game.
+ */
 class PatriksCoinGame : public Game {
  public:
   explicit PatriksCoinGame(const GameParameters& params);

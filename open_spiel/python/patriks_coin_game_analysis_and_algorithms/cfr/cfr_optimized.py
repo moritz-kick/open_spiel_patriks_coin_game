@@ -44,13 +44,15 @@ average_policy = cfr_solver.average_policy()
 # Prepare data structure to save results as a list of states
 results = []
 
-# Initialize a set to keep track of visited information states
-visited_states = set()
+# Define epsilon for minimal action probability
+epsilon = 1e-4  # Adjust as needed
 
 # Function to parse info_state string into the desired dictionary format
 def parse_info_state(info_state):
     parsed_info = {}
     for line in info_state.split('\n'):
+        if ':' not in line:
+            continue  # Skip lines that don't contain key-value pairs
         key, value = line.split(':', 1)
         key, value = key.strip(), value.strip()
 
@@ -64,22 +66,19 @@ def parse_info_state(info_state):
             parsed_info["coin_player_choices"] = tuple(map(int, value.split())) if value else ()
     return parsed_info
 
-# Modified traverse function with duplicate prevention
+# Traversal function with epsilon adjustment to prevent exploitability
 def traverse(state, average_policy, depth=0):
     if state.is_terminal():
         return
 
-    # Parse the info state
     player = state.current_player()
     info_state = state.information_state_string(player)
 
-    # Check if this state has already been visited
-    if info_state in visited_states:
-        return  # Skip to prevent duplication
+    # Optional: Add debug statement to monitor traversal
+    if depth == 0:
+        print(f"Traversing initial state with info_state: {info_state}")
 
-    # Mark this state as visited
-    visited_states.add(info_state)
-
+    # Parse the info state
     info_state_dict = parse_info_state(info_state)
 
     # Add depth to the parsed information
@@ -88,10 +87,26 @@ def traverse(state, average_policy, depth=0):
     # Get action probabilities for the state
     action_probs = average_policy.action_probabilities(state)
 
+    # Adjust action probabilities by adding epsilon to zero-prob actions
+    adjusted_action_probs = {}
+    total_prob = 0.0
+    for action in state.legal_actions():
+        prob = action_probs.get(action, 0.0)
+        adjusted_prob = prob if prob > 0.0 else epsilon
+        adjusted_action_probs[action] = adjusted_prob
+        total_prob += adjusted_prob
+
+    # Normalize the adjusted probabilities
+    for action in adjusted_action_probs:
+        adjusted_action_probs[action] /= total_prob
+
     # Prepare data for saving
     state_data = {
         **info_state_dict,  # include parsed info state details with depth
-        "actions": {state.action_to_string(player, action): prob for action, prob in action_probs.items()}
+        "actions": {
+            state.action_to_string(player, action): prob
+            for action, prob in adjusted_action_probs.items()
+        }
     }
 
     # Append state data to the results list

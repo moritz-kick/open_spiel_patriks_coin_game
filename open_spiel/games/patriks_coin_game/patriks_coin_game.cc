@@ -16,17 +16,22 @@ const GameType kGameType{
     /*max_num_players=*/2,
     /*min_num_players=*/2,
     /*provides_information_state_string=*/true,
-    /*provides_information_state_tensor=*/false,
+    /*provides_information_state_tensor=*/true,
     /*provides_observation_string=*/false,
     /*provides_observation_tensor=*/false,
-    /*parameter_specification=*/{}};
+    /*parameter_specification=*/{},
+    /*information_state_tensor_shape=*/{36}  // 3 rounds * 2 players * 6 actions
+};
 
+// Factory function to create a new instance of the game.
 std::shared_ptr<const Game> Factory(const GameParameters& params) {
   return std::shared_ptr<const Game>(new PatriksCoinGame(params));
 }
 
+// Register the game with OpenSpiel.
 REGISTER_SPIEL_GAME(kGameType, Factory);
 
+// Constructor for PatriksCoinGameState.
 PatriksCoinGameState::PatriksCoinGameState(std::shared_ptr<const Game> game)
     : State(game),
       num_rounds_played_(0),
@@ -34,14 +39,17 @@ PatriksCoinGameState::PatriksCoinGameState(std::shared_ptr<const Game> game)
       coin_player_used_zero_(false),
       last_non_zero_choice_(0) {}
 
+// Determine the current player. Returns terminal player if the game is over.
 Player PatriksCoinGameState::CurrentPlayer() const {
   return IsTerminal() ? kTerminalPlayerId : kSimultaneousPlayerId;
 }
 
+// Get legal actions for the current player.
 std::vector<Action> PatriksCoinGameState::LegalActions() const {
   return LegalActions(CurrentPlayer());
 }
 
+// Get legal actions for a specific player.
 std::vector<Action> PatriksCoinGameState::LegalActions(Player player) const {
   if (IsTerminal()) return {};
 
@@ -81,11 +89,12 @@ std::vector<Action> PatriksCoinGameState::LegalActions(Player player) const {
   }
 }
 
+// Since this is a simultaneous-move game, this method should not be called.
 void PatriksCoinGameState::DoApplyAction(Action action) {
-  // Since this is a simultaneous-move game, this method should not be called.
   SpielFatalError("DoApplyAction should not be called in a simultaneous-move game.");
 }
 
+// Apply actions for both players simultaneously.
 void PatriksCoinGameState::DoApplyActions(const std::vector<Action>& actions) {
   SPIEL_CHECK_EQ(actions.size(), 2);
   int coin_choice = actions[0];
@@ -112,10 +121,12 @@ void PatriksCoinGameState::DoApplyActions(const std::vector<Action>& actions) {
   num_rounds_played_++;  // Increment after actions are applied
 }
 
+// Convert an action to a string representation.
 std::string PatriksCoinGameState::ActionToString(Player player, Action action_id) const {
   return "Player " + std::to_string(player) + " chose: " + std::to_string(action_id);
 }
 
+// Convert the current state to a string representation.
 std::string PatriksCoinGameState::ToString() const {
   std::string str = "Game State:\n";
   str += "Current Round: " + std::to_string(num_rounds_played_ + 1) + "\n";
@@ -129,10 +140,12 @@ std::string PatriksCoinGameState::ToString() const {
   return str;
 }
 
+// Check if the game has reached a terminal state.
 bool PatriksCoinGameState::IsTerminal() const {
   return estimator_won_ || num_rounds_played_ >= 3;
 }
 
+// Get the returns for each player at a terminal state.
 std::vector<double> PatriksCoinGameState::Returns() const {
   std::vector<double> returns;
   if (estimator_won_) {
@@ -145,6 +158,7 @@ std::vector<double> PatriksCoinGameState::Returns() const {
   return returns;
 }
 
+// Get the rewards for each player at the current state.
 std::vector<double> PatriksCoinGameState::Rewards() const {
   std::vector<double> rewards;
   if (IsTerminal()) {
@@ -156,6 +170,7 @@ std::vector<double> PatriksCoinGameState::Rewards() const {
   return rewards;
 }
 
+// Get the information state string for a player.
 std::string PatriksCoinGameState::InformationStateString(Player player) const {
   if (player < 0 || player >= NumPlayers()) {
     SpielFatalError("Player index out of bounds: player >= 0 and player < NumPlayers().");
@@ -179,15 +194,68 @@ std::string PatriksCoinGameState::InformationStateString(Player player) const {
   return info;
 }
 
+// Clone the current state.
 std::unique_ptr<State> PatriksCoinGameState::Clone() const {
   return std::unique_ptr<State>(new PatriksCoinGameState(*this));
 }
 
+// Constructor for PatriksCoinGame.
 PatriksCoinGame::PatriksCoinGame(const GameParameters& params)
     : Game(kGameType, params) {}
 
+// Create a new initial state for the game.
 std::unique_ptr<State> PatriksCoinGame::NewInitialState() const {
   return std::unique_ptr<State>(new PatriksCoinGameState(shared_from_this()));
+}
+
+/**
+ * @brief Generates the information state tensor for a player.
+ *
+ * The tensor is a fixed-size vector representing the history of actions taken by both players.
+ * It uses one-hot encoding for each action in each round.
+ *
+ * Tensor Structure:
+ * - 3 rounds * 2 players * 6 actions = 36 elements
+ * - For each round:
+ *   - First 6 elements: Coin Player's action (0-5)
+ *   - Next 6 elements: Estimator's guess (0-5)
+ *
+ * @param player The player for whom the tensor is generated.
+ * @param values Pointer to the vector where the tensor will be stored.
+ */
+void PatriksCoinGameState::InformationStateTensor(Player player, std::vector<float>* values) const {
+  SPIEL_CHECK_GE(player, 0);
+  SPIEL_CHECK_LT(player, NumPlayers());
+
+  // Define constants
+  const int num_rounds = 3;
+  const int num_actions = 6;
+  const int actions_per_round = 2;  // Coin Player and Estimator
+
+  // Initialize the tensor with zeros
+  values->clear();
+  values->resize(num_rounds * actions_per_round * num_actions, 0.0f);
+
+  // Iterate over each round and set the corresponding action indices to 1
+  for (int round = 0; round < num_rounds; ++round) {
+    if (round < static_cast<int>(coin_player_choices_.size())) {
+      int coin_action = coin_player_choices_[round];
+      if (coin_action >= 0 && coin_action < num_actions) {
+        // Calculate the index for Coin Player's action
+        int index = round * actions_per_round * num_actions + 0 * num_actions + coin_action;
+        (*values)[index] = 1.0f;
+      }
+    }
+
+    if (round < static_cast<int>(estimator_guesses_.size())) {
+      int estimator_action = estimator_guesses_[round];
+      if (estimator_action >= 0 && estimator_action < num_actions) {
+        // Calculate the index for Estimator's guess
+        int index = round * actions_per_round * num_actions + 1 * num_actions + estimator_action;
+        (*values)[index] = 1.0f;
+      }
+    }
+  }
 }
 
 }  // namespace patriks_coin_game
