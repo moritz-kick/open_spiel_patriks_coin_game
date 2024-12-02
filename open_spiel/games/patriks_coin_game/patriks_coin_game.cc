@@ -16,12 +16,10 @@ const GameType kGameType{
     /*max_num_players=*/2,
     /*min_num_players=*/2,
     /*provides_information_state_string=*/true,
-    /*provides_information_state_tensor=*/true,
+    /*provides_information_state_tensor=*/false,
     /*provides_observation_string=*/false,
     /*provides_observation_tensor=*/false,
-    /*parameter_specification=*/{},
-    /*information_state_tensor_shape=*/{36}  // 3 rounds * 2 players * 6 actions
-};
+    /*parameter_specification=*/{}};
 
 // Factory function to create a new instance of the game.
 std::shared_ptr<const Game> Factory(const GameParameters& params) {
@@ -89,8 +87,8 @@ std::vector<Action> PatriksCoinGameState::LegalActions(Player player) const {
   }
 }
 
-// Since this is a simultaneous-move game, this method should not be called.
 void PatriksCoinGameState::DoApplyAction(Action action) {
+  // Since this is a simultaneous-move game, this method should not be called.
   SpielFatalError("DoApplyAction should not be called in a simultaneous-move game.");
 }
 
@@ -206,56 +204,6 @@ PatriksCoinGame::PatriksCoinGame(const GameParameters& params)
 // Create a new initial state for the game.
 std::unique_ptr<State> PatriksCoinGame::NewInitialState() const {
   return std::unique_ptr<State>(new PatriksCoinGameState(shared_from_this()));
-}
-
-/**
- * @brief Generates the information state tensor for a player.
- *
- * The tensor is a fixed-size vector representing the history of actions taken by both players.
- * It uses one-hot encoding for each action in each round.
- *
- * Tensor Structure:
- * - 3 rounds * 2 players * 6 actions = 36 elements
- * - For each round:
- *   - First 6 elements: Coin Player's action (0-5)
- *   - Next 6 elements: Estimator's guess (0-5)
- *
- * @param player The player for whom the tensor is generated.
- * @param values Pointer to the vector where the tensor will be stored.
- */
-void PatriksCoinGameState::InformationStateTensor(Player player, std::vector<float>* values) const {
-  SPIEL_CHECK_GE(player, 0);
-  SPIEL_CHECK_LT(player, NumPlayers());
-
-  // Define constants
-  const int num_rounds = 3;
-  const int num_actions = 6;
-  const int actions_per_round = 2;  // Coin Player and Estimator
-
-  // Initialize the tensor with zeros
-  values->clear();
-  values->resize(num_rounds * actions_per_round * num_actions, 0.0f);
-
-  // Iterate over each round and set the corresponding action indices to 1
-  for (int round = 0; round < num_rounds; ++round) {
-    if (round < static_cast<int>(coin_player_choices_.size())) {
-      int coin_action = coin_player_choices_[round];
-      if (coin_action >= 0 && coin_action < num_actions) {
-        // Calculate the index for Coin Player's action
-        int index = round * actions_per_round * num_actions + 0 * num_actions + coin_action;
-        (*values)[index] = 1.0f;
-      }
-    }
-
-    if (round < static_cast<int>(estimator_guesses_.size())) {
-      int estimator_action = estimator_guesses_[round];
-      if (estimator_action >= 0 && estimator_action < num_actions) {
-        // Calculate the index for Estimator's guess
-        int index = round * actions_per_round * num_actions + 1 * num_actions + estimator_action;
-        (*values)[index] = 1.0f;
-      }
-    }
-  }
 }
 
 }  // namespace patriks_coin_game
